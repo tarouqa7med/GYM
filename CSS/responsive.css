@@ -1,0 +1,390 @@
+
+
+@media screen and (max-width: 350px) {
+    nav.navbar {
+        width: 30px !important;
+        height: 150px;
+    }
+    nav.navbar ul li a i {
+        font-size: 15px;
+    }
+    header nav .responsive {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        gap: 6px;
+    }
+    header nav .responsive span {
+        height: 1.5px;
+    }
+    footer .container > p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    /* 250px */
+
+    header nav h1 {
+        font-size: 25px;
+    }
+    header nav .responsive {
+        display: flex;
+    }
+    header nav .ul {
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 0;
+        background-color: black;
+        border-radius: 10px;
+        z-index: 999;
+        transition-duration: 200ms;
+        overflow: hidden;
+    }
+    header nav .ul ul {
+        display: flex;
+        flex-direction: column;
+        margin-block: 20px;
+    }
+    header nav .ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    header nav .responsive:focus + .ul {
+        display: block;
+        height: 380px;
+    }
+    header .hook {
+        left: 30px !important;
+    }
+    header .hook h2 {
+        font-size: 20px;
+    }
+    header .hook h3 {
+        font-size: 15px;
+    }
+    header .hook button {
+        width: 70px;
+        font-size: 8px;
+    }
+    section#About .container > div:first-child h2 {
+        margin: auto;
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    section#About .container > div:first-child p {
+        font-size: 12px;
+    }
+    .services .container .div,
+    .services .container .div.right-left {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #Gallery .container .images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 400px);
+    }
+    #Gallery .container .images .image {
+        width: 250px;
+    }
+    .contact .container .layout .info {
+        margin-top: 35px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact .container .layout .form form div {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact .container .layout .form form div input,
+    .contact .container .layout .form form textarea {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 460px) {
+
+    section#About .container > div:last-child {
+        width: 90%;
+    }
+    section#About .container > div:last-child img {
+        width: 100%;
+    }
+.services .container .div .service-info {
+        width: 90%;
+    }
+    .services .container .div .service-info h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 560px) {
+    
+    .services .container .div .service-info h2 {
+        font-size: 24px;
+    }
+    .trainers .container .layout .coach {
+        padding-block: 35px;
+        height: 500px;
+    }
+    footer .container .div > div:nth-child(2) {
+        width: 100%;
+    }
+    footer .container .div > div:nth-child(2) .images {
+        margin: auto;
+        flex-direction: column;
+        width: 100% !important;
+    }
+    footer .container .div > div:nth-child(2) .images img {
+        width: 100% !important;
+    }
+    footer .container .div > div:nth-child(3) div {
+        width: 200px !important;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 740px) {
+
+    section#About .container {
+        margin-top: 35px;
+        flex-direction: column;
+    }
+    section#About .container > div:first-child {
+        width: 100%;
+    }
+    .clients .container .layout {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clients .container .layout > div {
+        width: 80% !important;
+    }
+    .clients .container .layout > div p  {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    /* 350px */
+    
+    footer .container .div {
+        display: block;
+    }
+    footer .container .div > div {
+        width: fit-content;
+    }
+    footer .container .div > div:nth-child(2) .images {
+        width: 500px;
+    }
+    footer .container .div > div:nth-child(2) .images img {
+        width: 150px;
+    }
+    footer .container .div > div:nth-child(3) div {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 371px) and (max-width: 576px) {
+    /* 450px */
+
+    header nav .responsive {
+        display: flex;
+    }
+    header nav .ul {
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 0;
+        background-color: black;
+        border-radius: 10px;
+        z-index: 999;
+        transition-duration: 200ms;
+        overflow: hidden;
+    }
+    header nav .ul ul {
+        display: flex;
+        flex-direction: column;
+        margin-block: 20px;
+    }
+    header nav .ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    header nav .responsive:focus + .ul {
+        display: block;
+        height: 380px;
+    }
+    header .hook {
+        left: 50px;
+    }
+    header .hook h2 {
+        font-size: 30px;
+    }
+    header .hook h3 {
+        font-size: 25px;
+    }
+    header .hook button {
+        width: 90px;
+        font-size: 12px;
+    }
+    .services .container .div,
+    .services .container .div.right-left {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #Gallery .container .images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 400px);
+    }
+    #Gallery .container .images .image {
+        width: 350px;
+    }
+    .contact .container .layout .info {
+        margin-top: 35px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact .container .layout .form form div {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact .container .layout .form form div input,
+    .contact .container .layout .form form textarea {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* 650px */
+
+    header nav .responsive {
+        display: flex;
+    }
+    header nav .ul {
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 0;
+        background-color: black;
+        border-radius: 10px;
+        z-index: 999;
+        transition-duration: 200ms;
+        overflow: hidden;
+    }
+    header nav .ul ul {
+        display: flex;
+        flex-direction: column;
+        margin-block: 20px;
+    }
+    header nav .ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    header nav .responsive:focus + .ul {
+        display: block;
+        height: 380px;
+    }
+    header .hook {
+        left: 100px;
+    }
+    header .hook h2 {
+        font-size: 30px;
+    }
+    header .hook h3 {
+        font-size: 25px;
+    }
+    header .hook button {
+        width: 90px;
+        font-size: 12px;
+    }
+    .services .container .div,
+    .services .container .div.right-left {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #Gallery .container .images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 400px);
+    }
+    #Gallery .container .images .image {
+        width: 450px;
+    }
+    .contact .container .layout .info {
+        margin-top: 35px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact .container .layout .form form div {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact .container .layout .form form div input,
+    .contact .container .layout .form form textarea {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* 850px */
+
+    header .hook {
+        left: 100px;
+    }
+    header .hook h2 {
+        font-size: 30px;
+    }
+    header .hook h3 {
+        font-size: 25px;
+    }
+    header .hook button {
+        width: 90px;
+        font-size: 12px;
+    }
+    header nav .responsive {
+        display: flex;
+    }
+    header nav .ul {
+        position: absolute;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 0;
+        background-color: black;
+        border-radius: 10px;
+        z-index: 999;
+        transition-duration: 200ms;
+        overflow: hidden;
+    }
+    header nav .ul ul {
+        display: flex;
+        flex-direction: column;
+        margin-block: 20px;
+    }
+    header nav .ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    header nav .responsive:focus + .ul {
+        display: block;
+        height: 380px;
+    }
+    #Gallery .container .images {
+        grid-template-columns: repeat(3, 235px);
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1180px) {
+    /* 1050px */
+
+    #Gallery .container .images {
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+@media screen and (min-width: 1180px) and (max-width: 1300px) {
+    /* 1200px */
+
+}
