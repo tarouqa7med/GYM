@@ -383,8 +383,8 @@
     #Gallery .container .images {
         grid-template-columns: repeat(3, 300px);
     }
-}
-@media screen and (min-width: 1180px) and (max-width: 1300px) {
-    /* 1200px */
 
+}
+@media screen and (min-width: 1180px) {
+    /* 1200px */
 }
