@@ -354,7 +354,7 @@ section.trainers {
     gap: 25px;
 }
 .trainers .container .layout .coach {
-    padding-block: 35px;
+    padding-block: 35px; 
     width: 250px;
     background-color: white;
     box-shadow: 0 1px 3px 2px black;
