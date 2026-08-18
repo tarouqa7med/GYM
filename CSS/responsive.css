@@ -1,32 +1,6 @@
 
+@media screen and (max-width: 371px) {
 
-@media screen and (max-width: 350px) {
-    nav.navbar {
-        width: 30px !important;
-        height: 150px;
-    }
-    nav.navbar ul li a i {
-        font-size: 15px;
-    }
-    header nav .responsive {
-        width: 35px;
-        height: 35px;
-        padding: 0;
-        gap: 6px;
-    }
-    header nav .responsive span {
-        height: 1.5px;
-    }
-    footer .container > p {
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 400px) {
-    /* 250px */
-
-    header nav h1 {
-        font-size: 25px;
-    }
     header nav .responsive {
         display: flex;
     }
@@ -56,40 +30,45 @@
         height: 380px;
     }
     header .hook {
-        left: 30px !important;
+        left: 20px;
     }
     header .hook h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
     header .hook h3 {
-        font-size: 15px;
+        font-size: 25px;
     }
     header .hook button {
-        width: 70px;
-        font-size: 8px;
-    }
-    section#About .container > div:first-child h2 {
-        margin: auto;
-        text-align: center;
-        font-size: 26px;
-        margin-bottom: 15px;
-    }
-    section#About .container > div:first-child p {
+        width: 90px;
         font-size: 12px;
     }
-    .services .container .div,
-    .services .container .div.right-left {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+    section#About .container {
+        margin-block: 50px !important;
+        display: block;
+        margin: auto;
+        overflow: auto;
+    }
+    section#About .container .div1 {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    .clients .container .layout {
+        display: block;
+    }
+    .clients .container .layout .part1,
+    .clients .container .layout .part2 {
+        width: 100%;
+    }
+    .clients .container .layout .part1 {
+        margin-bottom: 50px;
     }
     #Gallery .container .images {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(9, 400px);
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(9, 350px);
     }
     #Gallery .container .images .image {
-        width: 250px;
+        width: 300px;
     }
     .contact .container .layout .info {
         margin-top: 35px;
@@ -104,88 +83,17 @@
     .contact .container .layout .form form textarea {
         width: 80%;
     }
-}
-@media screen and (max-width: 460px) {
-
-    section#About .container > div:last-child {
-        width: 90%;
-    }
-    section#About .container > div:last-child img {
-        width: 100%;
-    }
-.services .container .div .service-info {
-        width: 90%;
-    }
-    .services .container .div .service-info h2 {
-        font-size: 24px;
-    }
-}
-@media screen and (max-width: 560px) {
-    
-    .services .container .div .service-info h2 {
-        font-size: 24px;
-    }
-    .trainers .container .layout .coach {
-        padding-block: 35px;
-        height: 500px;
-    }
-    footer .container .div > div:nth-child(2) {
-        width: 100%;
-    }
-    footer .container .div > div:nth-child(2) .images {
-        margin: auto;
-        flex-direction: column;
-        width: 100% !important;
-    }
-    footer .container .div > div:nth-child(2) .images img {
-        width: 100% !important;
-    }
-    footer .container .div > div:nth-child(3) div {
-        width: 200px !important;
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 740px) {
-
-    section#About .container {
-        margin-top: 35px;
-        flex-direction: column;
-    }
-    section#About .container > div:first-child {
-        width: 100%;
-    }
-    .clients .container .layout {
-        flex-direction: column;
-        gap: 50px;
-    }
-    .clients .container .layout > div {
-        width: 80% !important;
-    }
-    .clients .container .layout > div p  {
-        width: 100%;
-    }
-
-}
-@media screen and (max-width: 1200px) {
-    /* 350px */
-    
     footer .container .div {
         display: block;
     }
     footer .container .div > div {
-        width: fit-content;
+        width: 100%;
     }
-    footer .container .div > div:nth-child(2) .images {
-        width: 500px;
-    }
-    footer .container .div > div:nth-child(2) .images img {
-        width: 150px;
-    }
-    footer .container .div > div:nth-child(3) div {
-        width: 400px;
+    footer .container > p {
+        font-size: 14px;
     }
 }
-@media screen and (min-width: 371px) and (max-width: 576px) {
+@media screen and (min-width: 371px) and (max-width: 575.98px) {
     /* 450px */
 
     header nav .responsive {
@@ -217,7 +125,7 @@
         height: 380px;
     }
     header .hook {
-        left: 50px;
+        left: 20px;
     }
     header .hook h2 {
         font-size: 30px;
@@ -229,12 +137,52 @@
         width: 90px;
         font-size: 12px;
     }
+    section#About .container {
+        margin-block: 50px !important;
+        display: block;
+        margin: auto;
+        overflow: auto;
+    }
+    section#About .container .div1 {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    section#About .container .div1 h2 {
+        font-size: 30px;
+    }
+    section#About .container .div2 {
+        display: block;
+        float: right;
+        width: 100%;
+    }
+    section#About .container .div2 img {
+        display: block;
+        margin: auto;
+        width: 75%;
+    }
     .services .container .div,
     .services .container .div.right-left {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 30px;
+    }
+    .services .container .div .service-info {
+        width: 90%;
+    }
+    .services .container .div .service-info h2 {
+        font-size: 24px;
+    }
+    .clients .container .layout {
+        display: block;
+    }
+    .clients .container .layout .part1,
+    .clients .container .layout .part2 {
+        width: 100%;
+    }
+    .clients .container .layout .part1 {
+        margin-bottom: 50px;
     }
     #Gallery .container .images {
         grid-template-columns: repeat(1, 1fr);
@@ -256,8 +204,17 @@
     .contact .container .layout .form form textarea {
         width: 80%;
     }
+    footer .container .div {
+        display: block;
+    }
+    footer .container .div > div {
+        width: 100%;
+    }
+    footer .container > p {
+        font-size: 14px;
+    }
 }
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
     /* 650px */
 
     header nav .responsive {
@@ -301,12 +258,45 @@
         width: 90px;
         font-size: 12px;
     }
+    section#About .container {
+        margin-block: 50px !important;
+        display: block;
+        margin: auto;
+        overflow: auto;
+    }
+    section#About .container .div1 {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    section#About .container .div2 {
+        display: block;
+        float: right;
+        width: 100%;
+    }
+    section#About .container .div2 img {
+        display: block;
+        margin: auto;
+    }
     .services .container .div,
     .services .container .div.right-left {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 30px;
+    }
+    .services .container .div .service-info {
+        width: 85%;
+    }
+    .clients .container .layout {
+        display: block;
+    }
+    .clients .container .layout .part1,
+    .clients .container .layout .part2 {
+        width: 100%;
+    }
+    .clients .container .layout .part1 {
+        margin-bottom: 50px;
     }
     #Gallery .container .images {
         grid-template-columns: repeat(1, 1fr);
@@ -329,7 +319,7 @@
         width: 80%;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 990.98px) {
     /* 850px */
 
     header .hook {
@@ -370,14 +360,33 @@
         margin-bottom: 15px;
     }
     header nav .responsive:focus + .ul {
-        display: block;
         height: 380px;
+    }
+    section#About .container {
+        margin-block: 50px !important;
+        display: block;
+        margin: auto;
+        overflow: auto;
+    }
+    section#About .container .div1 {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    section#About .container .div2 {
+        display: block;
+        float: right;
+        width: 100%;
+    }
+    section#About .container .div2 img {
+        display: block;
+        margin: auto;
     }
     #Gallery .container .images {
         grid-template-columns: repeat(3, 235px);
     }
 }
-@media screen and (min-width: 992px) and (max-width: 1180px) {
+@media screen and (min-width: 991px) and (max-width: 1179.98px) {
     /* 1050px */
 
     #Gallery .container .images {
@@ -385,6 +394,49 @@
     }
 
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1180px) and (max-width: 1299.98px) {
     /* 1200px */
+
+    header nav {
+        height: 125px;
+    }
+    header nav h1 {
+        font-size: 45px;
+    }
+    header nav .ul ul li a {
+        font-size: 18px;
+    }
+    header .hook h2 {
+        font-size: 60px;
+    }
+    header .hook h3 {
+        font-size: 45px;
+    }
+    header .hook button {
+        width: 175px;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1300px) and (max-width: 1399.98px) {
+    /* 1200px */
+
+    header nav {
+        height: 125px;
+    }
+    header nav h1 {
+        font-size: 45px;
+    }
+    header nav .ul ul li a {
+        font-size: 18px;
+    }
+    header .hook h2 {
+        font-size: 60px;
+    }
+    header .hook h3 {
+        font-size: 45px;
+    }
+    header .hook button {
+        width: 175px;
+        font-size: 20px;
+    }
 }

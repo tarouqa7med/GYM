@@ -13,7 +13,6 @@ nav.navbar {
     display: flex;
     align-items: center;
     z-index: 999;
-    box-shadow: 0 0 15px 0 black;
 }
 .navbar ul {
     width: 100%;
@@ -36,9 +35,7 @@ nav.navbar {
     cursor: pointer;
     z-index: 1;
 }
-.arrow img {
-    filter: drop-shadow(0 0 10px black);
-}
+
 header {
     position: relative;
     height: 100vh;
@@ -62,7 +59,6 @@ header nav {
 header nav h1 {
     color: white;
     font-family: var(--fontOswald);
-    filter: drop-shadow(0 0 2px white);
     font-size: 40px;
     letter-spacing: 2px;
 }
@@ -120,7 +116,6 @@ header nav .ul ul li a {
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    filter: drop-shadow(0 0 1px white);
 }
 header .hook {
     position: absolute;
@@ -132,14 +127,12 @@ header .hook h2 {
     font-size: 45px;
     font-family: var(--fontOswald);
     margin-bottom: 20px;
-    filter: drop-shadow(0 0 2px white);
 }
 header .hook h3 {
     color: white;
     font-family: var(--fontOswald);
     font-size: 35px;
     margin-bottom: 20px;
-    filter: drop-shadow(0 0 2px white);
 }
 header .hook button {
     width: 125px;
@@ -149,18 +142,15 @@ header .hook button {
     font-size:  15px;
     font-weight: bolder;
     border: 2px solid var(--main);
-    box-shadow: 0 0 5px 0 var(--main);
     transition-duration: 200ms;
     cursor: pointer;
 }
 header .hook button:hover {
     background-color: transparent;
-    box-shadow: 0 0 5px 0 var(--main);
 }
 header .hook button:active {
     border-color: white;
     transform: scale(0.8);
-    box-shadow: 0 0 5px 0 white;
 }
 
 section#About {
@@ -170,35 +160,34 @@ section#About .container {
     overflow: auto;
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
     width: 90%;
-    
+    max-width: 1200px;
 }
 section#About .container > div {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-section#About .container > div:first-child {
+section#About .container .div1 {
     flex-direction: column;
     align-items: start;
 }
-section#About .container > div:first-child * {
+section#About .container .div1 * {
     margin-bottom: 30px;
 }
-section#About .container > div:first-child h2 {
+section#About .container .div1 h2 {
     color: var(--main);
     font-family: var(--fontOswald);
     font-size: 40px;
 }
-section#About .container > div:first-child p {
+section#About .container .div1 p {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 25px;
 }
-section#About .container > div:last-child {
+section#About .container .div2 {
     padding: 20px;
-    filter: drop-shadow(0 0 10px var(--main));
 }
 
 section.services {
@@ -207,6 +196,7 @@ section.services {
 }
 .services .container {
     width: 85%;
+    max-width: 1200px;
     display: block;
 }
 .services .container h1 {
@@ -273,17 +263,18 @@ section.services {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: spin 2s linear 0s infinite forwards;
 }
 .services .container .div .icon div i {
     font-size: 35px;
     color: var(--main);
-    filter: drop-shadow(0 0 1px var(--main));
 }
 
 section#Clients {
     background-color: white;
     padding-block: 50px;
+}
+.clients .container {
+    max-width: 1200px;
 }
 .clients .container h1 {
     text-align: center;
@@ -379,7 +370,6 @@ section.trainers {
     font-family: var(--fontOswald);
     letter-spacing: 2px;
     color: var(--main);
-    filter: drop-shadow(0 0 1px var(--main));
 }
 .trainers .container .layout .coach h4 {
     font-size: 16px;
@@ -420,7 +410,7 @@ section.trainers {
 }
 
 section#Gallery {
-    margin-block: 50px;
+    padding-block: 50px;
 }
 #Gallery .container {
     width: 90%;
@@ -485,6 +475,8 @@ section#Gallery {
 }
 .contact .container .layout {
     display: block;
+    max-width: 1200px;
+    margin: auto;
 }
 .contact .container .layout h1 {
     text-align: center;
@@ -582,14 +574,12 @@ section#Gallery {
     border: none;
     border-radius: 5px;
     letter-spacing: 1px;
-    box-shadow: 0 0 5px 0 black;
     cursor: pointer;
     transition-duration: 200ms;
 }
 .contact .container .layout .form form button:hover {
     background-color: rgb(190, 190, 190);
     color: black;
-    box-shadow: 0 0 10px 0 rgb(190, 190, 190);
 }
 .contact .container .layout .form form button:active {
     transform: scale(0.8);
@@ -601,6 +591,7 @@ footer {
 }
 footer .container {
     width: 90%;
+    max-width: 1200px;
 }
 footer .container .div {
     display: flex;
@@ -630,7 +621,6 @@ footer .container .div > div:nth-child(1) ul li a {
 }
 footer .container .div > div:nth-child(1) ul li a:hover {
     color: var(--main);
-    filter: drop-shadow(0 0 1px var(--main));
 }
 footer .container .div > div:nth-child(2) .images {
     margin: auto;
@@ -655,14 +645,13 @@ footer .container > p {
     margin-block: 20px;
     text-align: center;
     color: white;
-    font-size: large;
+    font-size: 20px;
     font-family: var(--fontOswald);
     font-weight: 300;
     letter-spacing: 1px;
 }
 footer .container > p span {
     color: var(--main);
-    animation: change-color 250ms linear 0s infinite alternate both;
 }
 footer .container > ul {
     margin: auto;
